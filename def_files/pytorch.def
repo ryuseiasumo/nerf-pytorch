@@ -10,8 +10,8 @@ From: nvcr.io/nvidia/pytorch:21.06-py3
 %post
     apt -y update
     apt -y upgrade
-    apt -y install imagemagick
     export DEBIAN_FRONTEND=noninteractive  # TimeZone等の質問をスキップする用の環境変数
+    apt -y install imagemagick
 
 %post
     conda install -c conda-forge opencv==4.5.1

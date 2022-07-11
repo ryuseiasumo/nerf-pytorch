@@ -65,7 +65,7 @@ This should give you a gif like this.
 
 * __[nerf-pytorch](https://github.com/krrish94/nerf-pytorch)__ のrequirementsから、openvの部分だけ変更しています(condaに変更)。
 
-* singularityイメージのビルドの際に、imagemagickの部分で居住地などを選択が必要になります。
+* singularityイメージのビルドの際に、imagemagickの部分でTimeZone等の質問がありますが、```export DEBIAN_FRONTEND=noninteractive```でスキップしています。
 
 
 
@@ -86,5 +86,6 @@ This should give you a gif like this.
 
 
 # LICENSE
-
-`nerf-pytorch` is available under the [MIT License](https://opensource.org/licenses/MIT). For more details see: [LICENSE](LICENSE) and [ACKNOWLEDGEMENTS](ACKNOWLEDGEMENTS).
+__[nerf-pytorch](https://github.com/krrish94/nerf-pytorch)__ に準拠します。
+<!-- 
+`nerf-pytorch` is available under the [MIT License](https://opensource.org/licenses/MIT). For more details see: [LICENSE](LICENSE) and [ACKNOWLEDGEMENTS](ACKNOWLEDGEMENTS). -->
