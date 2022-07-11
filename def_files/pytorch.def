@@ -1,0 +1,19 @@
+# nerf-pytorchで, 以下を実行
+# $singularity build --fakeroot pytorch.sif ./def_files/pytorch.def
+
+Bootstrap: docker
+From: nvcr.io/nvidia/pytorch:21.06-py3
+
+%files
+    requirements.txt /opt/requirements.txt
+
+%post
+    apt -y update
+    apt -y upgrade
+    apt -y install imagemagick
+    export DEBIAN_FRONTEND=noninteractive  # TimeZone等の質問をスキップする用の環境変数
+
+%post
+    conda install -c conda-forge opencv==4.5.1
+    chmod 755 /opt/requirements.txt
+    pip install -r /opt/requirements.txt
