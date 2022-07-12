@@ -86,6 +86,8 @@ This should give you a gif like this.
 
 
 # LICENSE
-__[nerf-pytorch](https://github.com/krrish94/nerf-pytorch)__ に準拠します。
+```nerf-pytorch-singularity``` is available under the [MIT License](https://opensource.org/licenses/MIT). For more details see: __[LICENSE](./LICENSE)__.
+<!-- __[nerf-pytorch](https://github.com/krrish94/nerf-pytorch)__ に準拠します。 -->
+
 <!-- 
 `nerf-pytorch` is available under the [MIT License](https://opensource.org/licenses/MIT). For more details see: [LICENSE](LICENSE) and [ACKNOWLEDGEMENTS](ACKNOWLEDGEMENTS). -->
